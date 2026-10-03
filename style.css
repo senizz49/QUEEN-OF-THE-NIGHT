@@ -27,19 +27,7 @@ main { width: min(1000px, 88%); margin: auto; }
 .hero {
   
 }.hero {
-  min-height: 78vh;
-  display: grid;
-  place-content: center;
-  text-align: center;
-  padding: 80px 20px;
-
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45)),
-    url("moon-flower.png");
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  
 }
 .eyebrow { letter-spacing: 4px; color: #e4c65a; font-size: 12px; }
 h1 {
@@ -51,7 +39,64 @@ h1 {
 .intro { max-width: 620px; margin: 24px auto 32px; line-height: 1.8; color: #d8d1c1; }
 .button {
   display: inline-block; padding: 13px 28px; border: 1px solid #e4c65a;
-  color: #08070a; background: #e4c65a; text-decoration: none;
+  color: #08070a; background: #e4c65a; text-decora.hero {
+  min-height: 78vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 100px 30px;
+  position: relative;
+  overflow: hidden;
+
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.48),
+      rgba(0, 0, 0, 0.58)
+    ),
+    url("moon-flower.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0 0 30px 30px;
+}
+
+.hero h1 {
+  font-size: clamp(48px, 7vw, 82px);
+  line-height: 1;
+  margin: 20px 0;
+  color: #f8e8a5;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+}
+
+.hero .intro {
+  max-width: 600px;
+  margin: 15px auto 30px;
+  color: #f1ead9;
+  line-height: 1.7;
+  font-size: 17px;
+}
+
+.hero .button {
+  display: inline-block;
+  width: auto;
+  padding: 13px 32px;
+  background: transparent;
+  border: 1px solid #e4c65a;
+  color: #f8e8a5;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.hero .button:hover {
+  background: #e4c65a;
+  color: #08070a;
+  transform: translateY(-2px);
+}tion: none;
   border-radius: 30px; font-weight: bold;
 }
 .card {
